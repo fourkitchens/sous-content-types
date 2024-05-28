@@ -12,6 +12,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "drupal/metatag": "*"
+        "drupal/metatag": "*",
+        "fourkitchens/sous-formats": "*",
+        "fourkitchens/sous-media": "*"
     }
 }
