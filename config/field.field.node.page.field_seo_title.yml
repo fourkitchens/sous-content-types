@@ -1,9 +1,12 @@
+uuid: 13720b88-b73e-4b76-8caa-80542371a199
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_seo_title
     - node.type.page
+_core:
+  default_config_hash: FvVvtL1TiPaX6PkzOGMmjCcsuOUTY-ZhfUhERnbTM0g
 id: node.page.field_seo_title
 field_name: field_seo_title
 entity_type: node

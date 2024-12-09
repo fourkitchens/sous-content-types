@@ -1,19 +1,19 @@
+uuid: 8340ee0a-5461-4b4c-b7d9-700d16b7595b
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
+    - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_image
     - field.field.node.page.field_teaser_text
-    - field.field.node.page.field_text
     - node.type.page
   module:
     - field_group
     - media_library
     - metatag
     - publication_date
-    - text
 third_party_settings:
   field_group:
     group_main:
@@ -21,6 +21,7 @@ third_party_settings:
         - group_info
         - group_content
         - group_teaser
+        - group_taxonomy
       label: Main
       region: content
       parent_name: ''
@@ -49,8 +50,7 @@ third_party_settings:
         description: ''
         required_fields: true
     group_content:
-      children:
-        - field_text
+      children: {  }
       label: Content
       region: content
       parent_name: group_main
@@ -79,8 +79,24 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_taxonomy:
+      children:
+        - field_tags
+      label: Taxonomy
+      region: content
+      parent_name: group_main
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
 _core:
-  default_config_hash: eiI90r-TJ4kjkMOh1w55J9CbCoGd32j7hNoJPqKuwyc
+  default_config_hash: WvIy4kZU8Bb9SMrkzP3DRZ1Y0r2N5NFPCKfoFkHyAZs
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -118,24 +134,26 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_tags:
+    type: entity_reference_autocomplete
+    weight: 123
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_teaser_image:
     type: media_library_widget
     weight: 8
     region: content
     settings:
-      media_types: { }
-    third_party_settings: { }
+      media_types: {  }
+    third_party_settings: {  }
   field_teaser_text:
     type: string_textarea
     weight: 9
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_text:
-    type: text_textarea
-    weight: 10
     region: content
     settings:
       rows: 5

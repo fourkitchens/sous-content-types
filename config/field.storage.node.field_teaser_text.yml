@@ -1,8 +1,11 @@
+uuid: f296c078-c268-45af-9eaa-37362982ae49
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: NLEAx4ttF8Nd2uzpRpApdPAyy-FoG1AIPe4C5WdQBeI
 id: node.field_teaser_text
 field_name: field_teaser_text
 entity_type: node

@@ -1,17 +1,18 @@
+uuid: eebf236a-b246-4375-ab66-137bc92d1c13
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
+    - field.field.node.page.field_tags
     - field.field.node.page.field_teaser_image
     - field.field.node.page.field_teaser_text
-    - field.field.node.page.field_text
     - node.type.page
   module:
-    - metatag
-    - text
     - user
+_core:
+  default_config_hash: lkRkns7OKycY9DDObRXSIIwjIbovPeHplntH6BHGf9k
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -25,21 +26,15 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_text:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_metadata: true
   field_seo_title: true
+  field_tags: true
   field_teaser_image: true
   field_teaser_text: true
   published_at: true
