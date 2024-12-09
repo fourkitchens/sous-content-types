@@ -1,8 +1,11 @@
+uuid: 4a1280f2-44af-4b62-a6bc-625a7258dfcd
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: iMAf20ZrWSJfliq_84vR2HBt8JE8bZYqF-CLEfsnhdk
 id: node.field_seo_title
 field_name: field_seo_title
 entity_type: node
