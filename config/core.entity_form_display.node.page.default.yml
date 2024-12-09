@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
-    - field.field.node.page.field_teaser_media
+    - field.field.node.page.field_teaser_image
     - field.field.node.page.field_teaser_text
     - field.field.node.page.field_text
     - node.type.page
@@ -65,7 +65,7 @@ third_party_settings:
         required_fields: true
     group_teaser:
       children:
-        - field_teaser_media
+        - field_teaser_image
         - field_teaser_text
       label: Teaser
       region: content
@@ -118,7 +118,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_teaser_media:
+  field_teaser_image:
     type: media_library_widget
     weight: 8
     region: content

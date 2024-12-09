@@ -5,8 +5,8 @@ dependencies:
   module:
     - media
     - node
-id: node.field_teaser_media
-field_name: field_teaser_media
+id: node.field_teaser_image
+field_name: field_teaser_image
 entity_type: node
 type: entity_reference
 settings:
