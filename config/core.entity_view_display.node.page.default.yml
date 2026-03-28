@@ -1,4 +1,3 @@
-uuid: eebf236a-b246-4375-ab66-137bc92d1c13
 langcode: en
 status: true
 dependencies:
@@ -11,30 +10,16 @@ dependencies:
     - node.type.page
   module:
     - user
-_core:
-  default_config_hash: lkRkns7OKycY9DDObRXSIIwjIbovPeHplntH6BHGf9k
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    type: text_summary_or_trimmed
-    label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   field_metadata: true
   field_seo_title: true
   field_tags: true
   field_teaser_image: true
   field_teaser_text: true
+  links: true
   published_at: true
