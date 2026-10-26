@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
     - field.field.node.page.field_metadata
     - field.field.node.page.field_seo_title
     - field.field.node.page.field_tags
@@ -33,6 +34,7 @@ content:
     weight: 1
     region: content
 hidden:
+  body: true
   field_metadata: true
   field_seo_title: true
   field_tags: true

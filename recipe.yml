@@ -7,19 +7,16 @@ recipes:
 install:
   # Install core dependencies.
   - media
-  - metatag
+  - media_library
   - node
-  - publication_date
   - text
   - user
+  # Install the modules used by Page fields, widgets, and settings.
+  - field_group
+  - metatag
+  - publication_date
+  - scheduler
+  - tagify
 config:
   import:
     metatag: '*'
-  actions:
-    # Update metatag default node settings
-    metatag.metatag_defaults.node:
-      simple_config_update:
-        tags:
-          canonical_url: '[node:url]'
-          description: '[node:field_teaser_text]'
-          title: '[node:field_seo_title]'
