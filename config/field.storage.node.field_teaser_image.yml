@@ -1,12 +1,9 @@
-uuid: 0e16b709-efd7-421c-81c2-0e3935b4dadc
 langcode: en
 status: true
 dependencies:
   module:
     - media
     - node
-_core:
-  default_config_hash: ttFY3bekoHSevaL9ejSjV8aOlkNglv7ltpPWy1-8TR4
 id: node.field_teaser_image
 field_name: field_teaser_image
 entity_type: node
